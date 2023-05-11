@@ -1,0 +1,336 @@
+/* Body */
+body{
+	/*para colocar una imagen de fondo*/
+	background-image:url("../imagen/fondo2.jpg");
+	/*para que no se repita la imagen de fondo*/
+	/*background-repeat: no-repeat;*/
+	/*para que se ajuste el tamaño de la imagen*/
+	/*background-size: 100% 100&;*/
+	/*font-family es para el tipo de letra*/
+	font-family:"Comic Sans MS" , "Verdana" , Arial;
+	/* es para el tamaño se presenta en pixeles*/
+	font-size: 40px;
+	/*es para el color de las letras: puedes colocar valor hexadecimal, el nombre del color o valores rgb*/
+	color: #A41574;
+	/* ; se utiliza para cerrar*/
+}
+hr{
+	/*border es para la linea, tamaño en pixeles, tipo de liea, color*/
+	border: 3px solid #A41574;
+	/* border-radius es para el terminado de las orillas, el radio se expresa en px*/
+	border-radius: 3px;
+}
+
+p{
+	/* se utiliza para alinear el texto por default estan alineados a la izquierda*/
+	text-align: center; /*center*/
+	font-size: 20px;
+	color: #A41574; 
+	/*background-color: #E8B9D8* para darle color a los parrafos*/
+}
+table,tr,td{
+	/*linea, grosor, tipo de linea*/
+	border:3px solid;
+	/*color de la linea*/
+	border-color:#A41574;
+	/*alineacion del texto*/
+	text-align:center;
+	/*color de fondo*/
+	background-color:#F8DAEF ;
+	
+}
+th{
+	background-color:white;
+}
+ul{
+	/*indica el tipo de viñeta*/
+	list-style-type: circle;
+	list-style-position: inside;
+}
+
+ol{
+	/*algunos de los valores de list-style-type son:
+	lower-alpha; upper-alpha; upper-roman;
+	a,b,c,d,e,f   i,ii,iii,iv   A,B,C,D,E,F   I,II,III,IV*/
+	list-style-type: upper-roman;
+	list-style-position:inside;
+}
+
+.pie{
+	text-align: center;
+	font-size: 12px;
+	color:#A41574;
+	font-family:fuente2;
+	font-weight:bold;
+}
+
+.tabla{
+	font-family: fuente2;
+	font-size: 25px;
+	color: #A41574;
+}
+
+.texto{
+	font-family:fuente1;
+	font-size: 80px;
+	color: #A41574;
+	font-weight:bold;
+	text-align: center;
+}
+
+.bot{
+	width:120px;
+	height:120px;
+	border-radius: 50%;
+}
+
+.CREA1{
+	width:160px;
+	height:160px;
+	border: 4px solid #A41574;
+	padding:4px;
+	
+}
+
+.imgm{
+	width:600px;
+	height:400px;
+}
+
+.allimg{
+	width:20px;
+	height:20px;
+	border: 6px solid #A41574;
+	padding:4px;
+}
+.oimg{
+	width:600px;
+	height:400px;
+	border:3px solid #A41574;
+}
+
+@font-face{
+	font-family:fuente1;
+	src: url("../fuentes/Calderock.otf");
+}
+
+@font-face{
+	font-family:fuente2;
+	src: url("../fuentes/Coffee for Breakfast.ttf");
+}
+
+.fuentegoogle{
+	font-family: 'Edu NSW ACT Foundation', cursive;
+}
+
+/*uso de Div's */
+/*Div o caja para el encabezado*/
+*{
+	margin:0px;
+	padding:0px;
+}
+
+div#top{
+	 width:100%;
+	 height: 100px;
+	 background-image: linear-gradient(#D98880,#E6B0AA,#FDEDEC);
+}
+
+div#principal{
+	margin: auto;
+	margin-top: 20px;
+	width:90%;
+	background-image:radial-gradient(#FDEDEC,#E6B0AA,#D98880) ;
+}
+
+div#piep{
+	margin-top:20px;
+	 width:100%;
+	 height: 200px;
+	 background-image:url("../imagen/fondo5.jpg"); 
+}
+
+.caja{
+	height: 300px;
+	width:200px;
+	background: #D98880;
+	border:1px solid #D98880;
+	margin: 5px;
+	color: black;
+	text-align: center;
+	display: inline-block;
+}.caja:hover{
+	box-shadow:0 0 10px #D98880;
+	transform:scale(1.3);
+}
+
+.caja-texto{
+	padding-top:2px;
+	font-size:20px;
+	color:#FDEDEC;
+	font-weight: bold;
+}
+
+.texto-adicional{
+	padding-top:5px;
+	font-size: 15px;
+}
+
+.carrousel{
+    width:600px;
+    margin:auto;
+    box-sizing:border-box;
+}
+.conteCarrousel{
+    width:100%;
+    height:400px;
+    overflow:hidden;
+    box-sizing:border-box;
+}
+.itemCarrousel{
+    position:relative;
+    width:100%;
+    height:100%;
+    box-sizing:border-box;
+}
+.itemCarrouselTarjeta{
+    width:100%;
+    height:100%;
+   box-sizing:border-box;
+}
+.itemCarrouselArrows{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    height:100%;
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:20px;
+    box-sizing:border-box;
+}
+.itemCarrouselArrows >i :hover{
+    cursor:pointer;
+}
+.conterCarrouselController{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+}
+.conterCarrouselController >a{
+    text-decoration:none;
+    font-size:32px;
+    color:grey;
+}
+.itemCarrouselArrows >a >i {
+    color:white;
+}
+
+}
+.itemCarrouselArrows >i:hover{
+	cursor:pointer;
+}
+.conterCarrouselController{
+	width:100%;
+	display:flex;
+	justify-content:space-between;
+}
+.conterCarrouselController>a{
+	text-decoration:none;
+	font-size:32px;
+	color:grey;
+}
+.conterCarrouselArrow>a>i{
+	color:white;
+	
+}
+
+.textoProductos{
+	width: 400px;
+	background-color:#FDEDEC;
+	font-size: 20px;
+	color:black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
